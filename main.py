@@ -1,15 +1,18 @@
 from animals import Animal, Dog, Bird, Fish, Cat
 
-
 def main():
-    # Create one instance of each animal subclass
-    animals = []
+    animals = [
+        Dog("Gavin", 2, "woof", "husky"),
+        Bird("Liam", 3, "cheep", True),
+        Fish("Malie", 1, "sss", "ocean"),
+        Cat("Adam", 5, "meow", True)
+    ]
 
-    # TODO: instantiate your animals and add them to the list
-
-    # Loop over all animals and call speak(), move(), and describe()
     for animal in animals:
-        pass
+        animal.speak()
+        animal.move()
+        animal.describe()
+        print()
 
 
 if __name__ == "__main__":
